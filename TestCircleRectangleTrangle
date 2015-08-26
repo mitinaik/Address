@@ -1,0 +1,28 @@
+# Address
+//Miti Naik
+//july 18 2015
+
+public class TestCircleRectangle
+{
+   public static void main(String[] args)
+   {
+      Circle c = new Circle(1.5);
+      System.out.println("A circle " + c.toString());
+      System.out.println("The radius is " + c.getRadius());
+      System.out.println("The area is " + c.getArea());
+      System.out.println("The diameter is " + c.getDiameter());
+      
+      Rectangle r = new Rectangle(4.0, 2.0);
+      System.out.println("\nA rectangle " + r.toString());
+      System.out.println("The area is " + r.getArea());
+      System.out.println("The perimeter is " + r.getPerimeter());
+      
+      Triangle t = new Triangle (1.0, 1.5, 1.0);
+      System.out.println(" \n The three side " + t.toString());
+      System.out.println(" The are of the triangle is " + t.getArea());
+      System.out.println(" The color is " +t.getColor());
+      System.out.println(" The triangle perimeter is " + t.getPerimeter());
+      System.out.println(" The triangle is " + t.getFilled());
+      
+   }
+}
