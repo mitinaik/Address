@@ -1,0 +1,42 @@
+# Address
+//Miti Naik
+//july 10 2015
+import java.util.Scanner;
+public class driver 
+{
+   public static void main(String[] args)
+   {
+   int test1, test2, test3;
+   double average;
+      
+   String FName, LName, City , State, Zipcode, Country;
+   Scanner keyboard = new Scanner(System.in);
+   System.out.print(" Enetr the test number:");
+   test1 = keyboard.nextInt();
+   System.out.print(" Enter the test score 2:");
+   test2 = keyboard.nextInt();
+   System.out.print(" Eneter the test score 3:");
+   test3 = keyboard.nextInt();
+    keyboard.nextLine();
+     System.out.print(" Enter the first name:");
+   FName = keyboard.nextLine();
+   System.out.print(" Enter the last name:");
+   LName = keyboard.nextLine();
+  
+   System.out.print(" Eneter the city:");
+   City = keyboard.nextLine();
+   System.out.print(" Enter the state:");
+   State = keyboard.nextLine();
+   System.out.print(" Eneter the zipcode:");
+   Zipcode = keyboard.nextLine();
+   System.out.print(" Enter the country:");
+   Country = keyboard.nextLine();
+   average = (test1+test2+test3)/3.0;
+      
+   Address home = new Address(City, State, Zipcode, Country);
+   Student s2 = new Student(FName, LName, home, test1, test2, test3, average);
+   System.out.println(s2);
+   }
+
+
+} 
