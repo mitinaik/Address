@@ -1,0 +1,38 @@
+# Address
+//Miti Naik
+//july 18 2015
+
+public class Rectangle extends GeometricObject
+{
+   private double length;
+   private double width;
+   
+   public Rectangle()
+   {
+      super();
+      length = width = 0.0;
+   }
+   public Rectangle(double l, double w)
+   {
+      //super();//explictly or implicitly
+      length = l;
+      width = w;
+      
+   }
+   public void setLength(double l)
+   {  length = l;}
+   public void setWidth(double w)
+   {  width = w;}
+   public double getLength()
+   {  return length;}
+   public double getWidth()
+   {  return width;}
+   public double getArea()
+   {  return length  * width;}
+   public double getPerimeter()
+   {
+      return 2 * (length + width);
+   }
+   
+    
+}
