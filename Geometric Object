@@ -1,0 +1,38 @@
+# Address
+//Miti Naik
+//july 18 2015
+import java.util.Date;
+
+public class GeometricObject
+{
+   private String color;
+   private boolean filled;
+   private Date dateCreated;
+   
+   public GeometricObject()
+   {
+      color = "yellow";
+      filled = true;
+      dateCreated = new Date();   
+      //dateCreated = null;
+   }
+   public void setColor(String c)
+   { color = c;}
+   public String getColor()
+   {  return color;}
+   public void setFilled(boolean f)
+   {  filled = f;}
+   public boolean getFilled()
+   {  return filled;}
+   public Date getDateCreated()
+   {  return dateCreated;}
+   public String toString()
+   {
+      String str = "Created on " + dateCreated 
+                  +", color: " + color
+                  +", and filled " + filled;
+      return str;
+   }
+   
+   
+}
