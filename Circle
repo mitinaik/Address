@@ -1,0 +1,41 @@
+# Address
+//Miti Naik
+//july 18 2015
+public class Circle extends GeometricObject
+{
+   private double radius;
+   
+   public Circle()
+   {
+      super();
+      radius = 0.0;
+   }
+   public Circle(double r)
+   {
+      radius = r;
+   }
+   
+   public void setRadius(double r)
+   {  radius = r;}
+   public double getRadius()
+   {  return radius;}
+   public double getArea()
+   {
+      return Math.PI * radius * radius;
+   }
+   public double getDiameter()
+   {
+      return 2 * radius;
+   }
+   public double getPerimeter()
+   {
+      return 2 * Math.PI * radius;
+   }
+   
+   public void printCircle()
+   {
+      System.out.println("The circle is created " + getDateCreated()
+                     + " and the radius is " + radius);
+   }
+   
+}
